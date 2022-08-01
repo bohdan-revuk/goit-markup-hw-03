@@ -7,7 +7,9 @@
   --secondary-bg-color: #f5f4fa;
   --studio-color: #000000;
   --hero-footer-bg: #2f303a;
-  --portfolio-item-color: #eeeeee;
+  --portfolio-border-color: #eeeeee;
+  --header-border-color: #ececec;
+  --address-nav-color: rgba(255, 255, 255, 0.6);
 }
 p,
 h1,
@@ -38,17 +40,11 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline: 2px solid red;
 }
-/* Рамку залишаю для себе в якості орієнтира.
-Після перевірки ДЗ приберу */
-
 /* <!--Верхня лінія--> */
 .header {
   background-color: var(--accent-color);
-  border: 1px solid #ececec;
+  border: 1px solid var(--header-border-color);
 }
 /*logo*/
 .logo {
@@ -129,6 +125,8 @@ body {
 .hero {
   background-color: var(--hero-footer-bg);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -159,7 +157,6 @@ body {
   cursor: pointer;
 
   border: 1px solid transparent;
-
   border-radius: 4px;
   padding: 10px 32px;
   display: inline-block;
@@ -167,6 +164,11 @@ body {
 }
 /* <!--Особливості--> */
 /*section-feature*/
+.section-feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
@@ -194,6 +196,9 @@ body {
 }
 /* <!--Чим ми займаємося--> */
 /*section-content*/
+.section-content {
+  padding-bottom: 94px;
+}
 .content-title {
   font-weight: 700;
   font-size: 36px;
@@ -220,10 +225,15 @@ body {
   max-width: 100%;
   height: auto;
 }
+.images-work.no-gap {
+  display: block;
+}
 /* <!--Наша команда-->*/
 /*section-teamt*/
 .section-team {
   background-color: var(--secondary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   font-weight: 700;
@@ -248,7 +258,6 @@ body {
 .images-team {
   max-width: 100%;
   height: auto;
-  padding-bottom: 30px;
 }
 .images-team.no-gap {
   display: block;
@@ -260,7 +269,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primari-text-color);
-  padding-bottom: 10px;
+
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 .team-class {
   font-size: 16px;
@@ -278,16 +289,14 @@ body {
 }
 /* <!--Підвал--> */
 /*footer*/
+/*webstudio*/
 .footer {
   background-color: var(--hero-footer-bg);
-}
-.container-footer {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 
   font-family: 'Raleway', sans-serif;
@@ -305,10 +314,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
+/*address*/
 .address-nav .map.link {
   display: inline-block;
-  margin-bottom: 9px;
 
   font-size: 14px;
   line-height: 1.71;
@@ -321,13 +329,10 @@ body {
   color: var(--primari-link-color);
 }
 .address-nav .mail.link {
-  display: inline-block;
-  margin-bottom: 9px;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-nav-color);
   font-style: normal;
 }
 .address-nav .mail.link:hover,
@@ -336,17 +341,22 @@ body {
 }
 .address-nav .tel.link {
   display: inline-block;
-  margin-bottom: 60px;
 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-nav-color);
   font-style: normal;
 }
 .address-nav .tel.link:hover,
 .address-nav .tel.link:focus {
   color: var(--primari-link-color);
+}
+.address-item {
+  margin-bottom: 9px;
+}
+.address-item:nth-child(3n) {
+  margin-bottom: 0;
 }
 /* <!--Портфоліо--> */
 /*section-portfolio*/
@@ -354,7 +364,6 @@ body {
   background-color: var(--accent-color);
 }
 /*button*/
-
 .button.secondary {
   font-weight: 500;
   font-size: 16px;
@@ -366,12 +375,10 @@ body {
   cursor: pointer;
 
   border: 1px solid transparent;
-
   border-radius: 4px;
   padding: 6px 22px;
   display: inline-block;
   min-width: 73px;
-  margin-bottom: 50px;
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -382,17 +389,20 @@ body {
   display: flex;
   justify-content: center;
 }
-.button .item + .item {
+.button .button-item + .button-item {
   margin-left: 8px;
+  margin-bottom: 50px;
 }
-
 /*portfolio*/
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-main {
   background-color: var(--primari-bg-color);
 }
 .portfolio-item {
   background-color: var(--accent-color);
-  border: 1px solid var(--portfolio-item-color);
 }
 .portfolio-name {
   font-weight: 700;
@@ -400,16 +410,19 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primari-text-color);
-  padding-left: 24px;
-  padding-bottom: 4px;
+
+  margin-bottom: 4px;
 }
 .portfolio-class {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--titl-text-color);
-  padding-left: 24px;
-  padding-bottom: 20px;
+}
+.portfolio-box {
+  padding: 20px 24px;
+  border: 1px solid var(--portfolio-border-color);
+  border-top: none;
 }
 .portfolio {
   display: flex;
@@ -428,7 +441,6 @@ body {
 .images-portfolio {
   max-width: 100%;
   height: auto;
-  padding-bottom: 20px;
 }
 .images-portfolio.no-gap {
   display: block;

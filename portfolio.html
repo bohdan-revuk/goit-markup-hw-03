@@ -47,11 +47,19 @@
       <section class="section-portfolio">
         <div class="container container-portfolio">
           <ul class="button list">
-            <li class="item"><button class="button secondary" type="button">Все</button></li>
-            <li class="item"><button class="button secondary" type="button">Веб-сайти</button></li>
-            <li class="item"><button class="button secondary" type="button">Додатки</button></li>
-            <li class="item"><button class="button secondary" type="button">Дизайн</button></li>
-            <li class="item"><button class="button secondary" type="button">Маркетинг</button></li>
+            <li class="button-item"><button class="button secondary" type="button">Все</button></li>
+            <li class="button-item">
+              <button class="button secondary" type="button">Веб-сайти</button>
+            </li>
+            <li class="button-item">
+              <button class="button secondary" type="button">Додатки</button>
+            </li>
+            <li class="button-item">
+              <button class="button secondary" type="button">Дизайн</button>
+            </li>
+            <li class="button-item">
+              <button class="button secondary" type="button">Маркетинг</button>
+            </li>
           </ul>
           <ul class="portfolio list">
             <li class="portfolio-item">
@@ -62,8 +70,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Технокряк</h2>
-              <p class="portfolio-class">Веб-сайт</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Технокряк</h2>
+                <p class="portfolio-class">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -73,8 +83,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Постер New Orlean vs Golden Star</h2>
-              <p class="portfolio-class">Дизайн</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio-class">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -84,8 +96,10 @@
                 width="370"
                 height="294"
               />
-              <h1 class="portfolio-name">Ресторан Seafood</h1>
-              <p class="portfolio-class">Додаток</p>
+              <div class="portfolio-box">
+                <h1 class="portfolio-name">Ресторан Seafood</h1>
+                <p class="portfolio-class">Додаток</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -95,8 +109,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Проєкт Prime</h2>
-              <p class="portfolio-class">Маркетинг</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Проєкт Prime</h2>
+                <p class="portfolio-class">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -106,8 +122,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Проєкт Boxes</h2>
-              <p class="portfolio-class">Додаток</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Проєкт Boxes</h2>
+                <p class="portfolio-class">Додаток</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -117,8 +135,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Inspiration has no Borders</h2>
-              <p class="portfolio-class">Веб-сайт</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Inspiration has no Borders</h2>
+                <p class="portfolio-class">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -128,8 +148,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Видання Limited Edition</h2>
-              <p class="portfolio-class">Дизайн</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Видання Limited Edition</h2>
+                <p class="portfolio-class">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -139,8 +161,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Проект LAB</h2>
-              <p class="portfolio-class">Маркетинг</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Проект LAB</h2>
+                <p class="portfolio-class">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -150,8 +174,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-name">Growing Business</h2>
-              <p class="portfolio-class">Додаток</p>
+              <div class="portfolio-box">
+                <h2 class="portfolio-name">Growing Business</h2>
+                <p class="portfolio-class">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -165,7 +191,7 @@
         >
         <address>
           <ul class="address-nav list">
-            <li>
+            <li class="address-item">
               <a
                 href="https://goo.gl/maps/467CXMGUrqbuEtQ98"
                 target="_blank"
@@ -174,8 +200,12 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li><a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a></li>
+            <li class="address-item">
+              <a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a>
+            </li>
+            <li class="address-item">
+              <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
